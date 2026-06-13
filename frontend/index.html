@@ -3,212 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Premium Newsletter — Subscribe Today</title>
+  <title>Subscribe — Newsletter</title>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="newsletter.css">
 </head>
 <body>
+  <div class="container" style="display:flex;min-height:100vh;align-items:center;justify-content:center;">
+    <button class="btn-primary" onclick="openSubscribeModal()" style="font-size:1rem;padding:14px 40px;">
+      Subscribe to Newsletter
+    </button>
+  </div>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="navbar-inner">
-      <a href="#" class="nav-logo">
-        <div class="nav-logo-icon">✦</div>
-        <span class="nav-logo-text">Newsletter</span>
-      </a>
-      <div class="nav-links">
-        <a href="#features" class="nav-link">Features</a>
-        <a href="#benefits" class="nav-link">Benefits</a>
-        <a href="#" class="nav-link">About</a>
-      </div>
-      <button class="hamburger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-    <div id="mobile-menu" class="mobile-menu">
-      <a href="#features">Features</a>
-      <a href="#benefits">Benefits</a>
-      <a href="#" onclick="openSubscribeModal()">Subscribe</a>
-    </div>
-  </nav>
-
-  <!-- HERO SECTION -->
-  <section class="hero-bg dot-grid">
-    <div class="container">
-      <div style="padding: 120px 0 80px;">
-        <div class="fade-up d1">
-          <div class="tag">✦ PREMIUM CONTENT</div>
-        </div>
-        <h1 class="section-heading fade-up d2" style="text-align: center;">
-          Stay Ahead of the Curve
-        </h1>
-        <p class="fade-up d3" style="text-align: center; color: #9CA3AF; font-size: 1.1rem; margin: 24px 0 40px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
-          Get exclusive insights, industry trends, and curated content delivered weekly. Join thousands of professionals staying informed.
-        </p>
-        <div class="fade-up d4" style="text-align: center;">
-          <button class="btn-primary" onclick="openSubscribeModal()" style="font-size: 1rem; padding: 14px 40px;">
-            Subscribe Now
-          </button>
-          <p style="margin-top: 16px; color: #6B7280; font-size: 0.9rem;">✓ No spam • ✓ Unsubscribe anytime • ✓ Weekly digest</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES SECTION -->
-  <section class="section" id="features">
-    <div class="container">
-      <h2 class="sub-heading">What You'll Get</h2>
-      <div class="feature-grid">
-        <div class="card reveal">
-          <div class="icon-box">📊</div>
-          <h3 style="color: #E5E7EB; margin-top: 16px; font-family: 'Sora', sans-serif; font-weight: 700;">Market Insights</h3>
-          <p style="color: #9CA3AF; margin-top: 8px; font-size: 0.95rem; line-height: 1.6;">Deep analysis of industry trends and market movements curated by experts.</p>
-        </div>
-        <div class="card reveal">
-          <div class="icon-box">💡</div>
-          <h3 style="color: #E5E7EB; margin-top: 16px; font-family: 'Sora', sans-serif; font-weight: 700;">Expert Tips</h3>
-          <p style="color: #9CA3AF; margin-top: 8px; font-size: 0.95rem; line-height: 1.6;">Actionable advice from industry leaders to accelerate your growth.</p>
-        </div>
-        <div class="card reveal">
-          <div class="icon-box">🎯</div>
-          <h3 style="color: #E5E7EB; margin-top: 16px; font-family: 'Sora', sans-serif; font-weight: 700;">Best Practices</h3>
-          <p style="color: #9CA3AF; margin-top: 8px; font-size: 0.95rem; line-height: 1.6;">Proven strategies and methodologies from top performers in your field.</p>
-        </div>
-        <div class="card reveal">
-          <div class="icon-box">🚀</div>
-          <h3 style="color: #E5E7EB; margin-top: 16px; font-family: 'Sora', sans-serif; font-weight: 700;">Growth Resources</h3>
-          <p style="color: #9CA3AF; margin-top: 8px; font-size: 0.95rem; line-height: 1.6;">Tools, templates, and resources to streamline your workflow and scale faster.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- BENEFITS SECTION -->
-  <section class="section" id="benefits">
-    <div class="container">
-      <div class="split-grid">
-        <div>
-          <h2 class="section-heading reveal">Why Subscribe?</h2>
-        </div>
-        <div>
-          <div class="sol-box reveal">
-            <span class="label-orng">✓ Exclusive Access</span>
-            <p style="margin-top: 8px;">First access to premium content and early-bird opportunities.</p>
-          </div>
-          <div class="sol-box reveal" style="margin-top: 12px;">
-            <span class="label-orng">✓ Community Network</span>
-            <p style="margin-top: 8px;">Connect with like-minded professionals and expand your network.</p>
-          </div>
-          <div class="sol-box reveal" style="margin-top: 12px;">
-            <span class="label-orng">✓ Weekly Digest</span>
-            <p style="margin-top: 8px;">Curated summaries delivered to your inbox every Friday.</p>
-          </div>
-          <div class="sol-box reveal" style="margin-top: 12px;">
-            <span class="label-orng">✓ 100% Privacy Focused</span>
-            <p style="margin-top: 8px;">Your data is never shared. Unsubscribe anytime with one click.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- CTA SECTION -->
-  <section class="section" style="text-align: center;">
-    <div class="container">
-      <h2 class="section-heading reveal">Ready to Level Up?</h2>
-      <p class="reveal" style="color: #9CA3AF; font-size: 1.1rem; margin: 16px 0 32px; max-width: 500px; margin-left: auto; margin-right: auto;">Join our growing community of professionals and stay ahead of the competition.</p>
-      <button class="btn-primary reveal" onclick="openSubscribeModal()" style="font-size: 1rem; padding: 14px 40px;">Get Started Free</button>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer style="background: #0F172A; border-top: 1px solid #374151; padding: 40px 24px; text-align: center; color: #6B7280;">
-    <div class="container" style="margin-bottom: 20px;">
-      <p>© 2026 Premium Newsletter. All rights reserved.</p>
-    </div>
-    <div style="display: flex; justify-content: center; gap: 20px; font-size: 0.9rem;">
-      <a href="#" style="color: #9CA3AF; text-decoration: none;">Privacy Policy</a>
-      <a href="#" style="color: #9CA3AF; text-decoration: none;">Terms of Service</a>
-      <a href="#" style="color: #9CA3AF; text-decoration: none;">Contact</a>
-    </div>
-  </footer>
-
-  <!-- EMAIL SUBSCRIPTION MODAL -->
+  <!-- Subscribe Modal -->
   <div id="subscribeModal" class="modal">
     <div class="modal-overlay" onclick="closeSubscribeModal()"></div>
     <div class="modal-content">
       <button class="modal-close" onclick="closeSubscribeModal()">✕</button>
-      <h2 style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 1.5rem; color: #E5E7EB; margin-bottom: 8px;">
-        Join Our Newsletter
-      </h2>
-      <p style="color: #9CA3AF; margin-bottom: 24px; font-size: 0.95rem;">
-        Get exclusive insights delivered to your inbox every week.
-      </p>
-      
-      <div style="margin-bottom: 20px;">
+      <h2 style="font-family:'Sora',sans-serif;font-weight:700;font-size:1.5rem;color:#E5E7EB;margin-bottom:8px;">Join Our Newsletter</h2>
+      <p style="color:#9CA3AF;margin-bottom:24px;font-size:0.95rem;">Get exclusive insights delivered to your inbox.</p>
+
+      <div style="margin-bottom:20px;">
         <label class="form-label" for="emailInput">Email Address</label>
-        <input 
-          type="email" 
-          id="emailInput" 
-          class="form-input" 
-          placeholder="you@example.com"
-          oninput="validateEmailRealTime()"
-        />
+        <input type="email" id="emailInput" class="form-input" placeholder="you@example.com" oninput="validateEmailRealTime()" />
         <div id="emailError" class="error-message"></div>
         <div id="emailValidation" class="validation-message"></div>
       </div>
 
-      <button id="subscribeBtn" class="btn-primary" onclick="submitSubscription()" style="width: 100%; font-size: 1rem; padding: 12px; margin-top: 24px;">
-        Subscribe
-      </button>
+      <button id="subscribeBtn" class="btn-primary" onclick="submitSubscription()" style="width:100%;font-size:1rem;padding:12px;margin-top:24px;">Subscribe</button>
 
-      <div id="successMessage" class="success-message" style="display: none; margin-top: 16px;">
-        ✓ Check your inbox! Verification email sent.
-      </div>
+      <div id="successMessage" class="success-message" style="display:none;margin-top:16px;">✓ Check your inbox! Verification email sent.</div>
 
-      <p style="margin-top: 16px; font-size: 0.85rem; color: #6B7280; text-align: center;">
-        We respect your privacy. Unsubscribe anytime.
-      </p>
+      <p style="margin-top:16px;font-size:0.85rem;color:#6B7280;text-align:center;">We respect your privacy. Unsubscribe anytime.</p>
     </div>
   </div>
 
-  <!-- CAPTCHA VERIFICATION MODAL -->
+  <!-- CAPTCHA Modal -->
   <div id="captchaModal" class="modal">
     <div class="modal-overlay" onclick="closeCaptchaModal()"></div>
     <div class="modal-content">
       <button class="modal-close" onclick="closeCaptchaModal()">✕</button>
-      <h2 style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 1.5rem; color: #E5E7EB; margin-bottom: 8px;">
-        Verify You're Human
-      </h2>
-      <p style="color: #9CA3AF; margin-bottom: 24px; font-size: 0.95rem;">
-        Please answer the simple math question to continue.
-      </p>
-      
-      <div style="margin-bottom: 20px;">
-        <p id="captchaQuestion" style="color: #E5E7EB; font-size: 1.2rem; font-weight: 600; margin-bottom: 16px; text-align: center;"></p>
-        <input 
-          type="number" 
-          id="captchaAnswer" 
-          class="form-input" 
-          placeholder="Your answer"
-        />
+      <h2 style="font-family:'Sora',sans-serif;font-weight:700;font-size:1.5rem;color:#E5E7EB;margin-bottom:8px;">Verify You're Human</h2>
+      <p style="color:#9CA3AF;margin-bottom:24px;font-size:0.95rem;">Please answer the simple math question to continue.</p>
+
+      <div style="margin-bottom:20px;">
+        <p id="captchaQuestion" style="background:rgba(249,115,22,0.08);border:1px solid rgba(249,115,22,0.3);color:#E5E7EB;font-size:1.8rem;font-weight:800;padding:24px;border-radius:12px;margin-bottom:20px;text-align:center;font-family:'Sora',sans-serif;"></p>
+        <input type="number" id="captchaAnswer" class="form-input" placeholder="Your answer" />
         <div id="captchaError" class="error-message"></div>
       </div>
 
-      <button id="verifyCaptchaBtn" class="btn-primary" onclick="verifyCaptcha()" style="width: 100%; font-size: 1rem; padding: 12px; margin-top: 24px;">
-        Verify & Subscribe
-      </button>
+      <button id="verifyCaptchaBtn" class="btn-primary" onclick="verifyCaptcha()" style="width:100%;font-size:1rem;padding:12px;margin-top:24px;">Verify & Subscribe</button>
 
-      <p style="margin-top: 16px; font-size: 0.85rem; color: #6B7280; text-align: center;">
-        Can't see the question clearly? <span style="color: var(--accent); cursor: pointer;" onclick="generateCaptcha()">Generate new</span>
-      </p>
+      <p style="margin-top:16px;font-size:0.85rem;color:#6B7280;text-align:center;">Can't see the question? <span style="color:var(--accent);cursor:pointer;" onclick="generateCaptcha()">Generate new</span></p>
     </div>
   </div>
 
