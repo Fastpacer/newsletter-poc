@@ -48,6 +48,7 @@ app.add_middleware(
         "http://127.0.0.1:3000",
         "http://localhost",
         "https://newsletter-poc-nine.vercel.app",
+        "https://newsletter-poc-frontend.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
